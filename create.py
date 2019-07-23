@@ -2,7 +2,8 @@ from bot import create_bot, get_title, get_body
 from dotenv import load_dotenv
 load_dotenv()
 
-SUBREDDIT = "TestStars"
+import os
+SUBREDDIT = os.getenv("REDDIT_SUBREDDIT")
 
 
 def make_post(bot):
